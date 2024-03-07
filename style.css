@@ -23,13 +23,13 @@
 }
 
 .inner-wrap{
-    border: 0.5px solid red;
+    /* border: 0.5px solid red; */
     max-width: 1200px;
     margin: auto;
 }
 
 .heading{
-    border: 0.5px solid aqua;
+    /* border: 0.5px solid aqua; */
     margin: 30px auto;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .cards{
-    border: 0.5px solid purple;
+    /* border: 0.5px solid purple; */
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
