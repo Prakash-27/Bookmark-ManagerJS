@@ -72,6 +72,10 @@
     padding: 10px;
 }
 
+.create form option{
+    font-size: 18px;
+}
+
 .create form.add input#bookmark{
     border: 0px;
     border-radius: 3px;
@@ -79,4 +83,112 @@
     color: #FFFFFF;
     cursor: pointer;
     padding: 10px 20px;
+}
+
+.category-list{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-list span{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.category-list span:hover{
+    background-color: #EAEBEF;
+}
+
+.category-list .active{
+    background-color: #0D479a !important;
+    color: #FFFFFF;
+}
+
+.cards{
+    border: 0.5px solid purple;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0px;
+}
+
+.card{
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    border-radius: 5px;
+    width: 350px;
+    margin: 7px 0px;
+}
+
+.card:hover{
+    background-color: #F7F7F7;
+}
+
+.card .sub-information{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+}
+
+.card .sub-information p{
+    flex-grow: 1;
+}
+
+.card .sub-information .category{
+    background-color: #233E8B;
+    color: #FFFFFF;
+    padding: 2px 7px;
+    border-radius: 3px;
+}
+
+.card .sub-information .category.netflix{
+    background-color: #b3010a;
+}
+
+.card .sub-information .category.youtube{
+    background-color: #4d4d4d;
+}
+
+.card .sub-information .category.prime{
+    background-color: #1468c2;
+}
+
+.card .sub-information .category.other{
+    background-color: #c47600;
+}
+
+.card .sub-information i{
+    margin: 7px;
+    font-size: 18px;
+}
+
+.card .sub-information .website{
+    color: #393E46;
+}
+
+.card .sub-information .search{
+    color: #2666CF;
+}
+
+.card .sub-information .delete{
+    color: #EB596E;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .create .add{
+        flex-direction: column;
+    }
+
+    .card{
+        flex-grow: 1;
+    }
 }
